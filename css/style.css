@@ -1,8 +1,9 @@
-*{margin:0; padding: 0;}
+*{margin:0; padding: 0; font-family: sans-serif;}
 
-input[type="radio"]{display: none;}
+input[type="radio"],input[type="checkbox"]{display: none;}
 label{opacity: 0.9;}
 label:hover{opacity: 1;}
+ul,li{list-style: none;}
 header{
     display: flex;
     width: 100%;
@@ -20,4 +21,83 @@ header img{
     width: auto;
     height: 176px;
     cursor: pointer;
+}
+
+li{ margin-left: 10px;}
+
+
+
+
+input[type="radio"]:checked ~ .ancora{
+    border-bottom: 3px solid white;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+    background-color: #223330;
+}
+
+
+
+.ancora{
+    color: #fff;
+   cursor: pointer;
+   padding: 3px 50px;
+   line-height: 30px;
+   position: relative;
+   margin-bottom: 40px;
+   background-color: #223330;
+
+}
+
+.btn{
+    padding:0;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 5px;
+    display: none;
+    cursor: pointer;
+}
+
+.none{display:none;}
+
+.drop{
+    position: relative;
+}
+.drop:hover .dropdown{
+    display: block;
+
+}
+.dropdown{
+    position: absolute;
+    background-color: #223330;
+    display: none;
+    z-index: 1;
+    box-shadow: 5px 5px 5px 1px grey;
+}
+
+.log{
+    border:none;
+    padding: 5px;
+    cursor: pointer;
+    background: none;
+    color: #fff;
+    margin-top:3px;
+    outline: none;
+}
+
+@media (max-width:700px){
+  .menu{
+      flex-direction: column;
+      align-items: center;
+  }
+  li{display: none;}
+
+  .btn{display: block;}
+
+  #check:checked ~* li{
+      display: block;
+  }
 }
