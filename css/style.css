@@ -1,7 +1,7 @@
 *{margin:0; padding: 0; font-family: sans-serif;}
 
 input[type="radio"],input[type="checkbox"]{display: none;}
-label{opacity: 0.9;}
+label{opacity: 0.9; }
 label:hover{opacity: 1;}
 ul,li{list-style: none;}
 header{
@@ -76,7 +76,6 @@ input[type="radio"]:checked ~ .ancora{
     display: none;
     z-index: 1;
     box-shadow: 5px 5px 5px 1px grey;
-    overflow: hidden;
     width: auto;
 }
 
