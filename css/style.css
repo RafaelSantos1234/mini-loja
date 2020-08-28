@@ -1,0 +1,23 @@
+*{margin:0; padding: 0;}
+
+input[type="radio"]{display: none;}
+label{opacity: 0.9;}
+label:hover{opacity: 1;}
+header{
+    display: flex;
+    width: 100%;
+    height: 176px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/assets/home_img/head_sem_logo_.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #223330;
+}
+
+header img{
+    width: auto;
+    height: 176px;
+    cursor: pointer;
+}
